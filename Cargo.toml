@@ -1,0 +1,18 @@
+[package]
+name = "rust_client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tonic = "0.7"
+prost = "0.10"
+tokio = { version = "*", features = ["macros", "rt-multi-thread"] }
+arrow = "*"
+arrow-flight = "*"
+chrono = "0.4.19"
+futures = "0.3.21"
+
+[build-dependencies]
+tonic-build = "0.7"
